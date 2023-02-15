@@ -17,15 +17,16 @@ import MostrarUsuario from "./MostrarUsuario";
 
     function MostrarUsuario (prosp){
     
-        if(estado.nombre == prosp.nombre){
+        if( setEstado == estado.nombre){
+            return(
+                <h2>Ya Usted a sido registrdo</h2>
+            )
+        }else{
+            
             return(
                 estado.map(estado=>(
                 <h2>Su nombre es : {estado.nombre} y su apellido es : {estado.apellido}</h2>
                 ))
-            )
-        }else{
-            return(
-                <h2>Ya Usted a sido registrdo</h2>
             )
         }
     }
